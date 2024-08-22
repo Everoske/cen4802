@@ -1,13 +1,13 @@
 public class FibonacciDemo {
     public static void main(String[] args) {
-        int term = 10;
-        System.out.println("The " + term + "th term of the Fibonacci sequence is " + GetFibonacciTerm(term));
+        int n = 10;
+        System.out.println("The " + n + "th term of the Fibonacci sequence is " + GetFibonacciTerm(n));
     }
 
-    private static int GetFibonacciTerm(int term) {
-        if (term < 1) return 0;
-        if (term == 1) return 1;
+    private static int GetFibonacciTerm(int n) {
+        if (n < 1) return 0;
+        if (n == 1) return 1;
 
-        return GetFibonacciTerm(term - 1) + GetFibonacciTerm(term - 2);
+        return GetFibonacciTerm(n - 1) + GetFibonacciTerm(n - 2);
     }
 }
